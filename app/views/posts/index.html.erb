@@ -1,0 +1,10 @@
+POSTS
+<%= link_to "New post", new_post_path %>
+<br><br><br>
+<% @posts.each do |post| %>
+  <hr>
+  <%= link_to post.title, edit_post_path(post) %>
+  <p class="container"><%= post.content %></p>
+<% end %>
+<br><br><br>
+<center><i>______________Made by Tran Hai Quan______________</i></center>
